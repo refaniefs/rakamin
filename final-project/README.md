@@ -84,8 +84,8 @@ The algorithms we use with its default hyperparameter:
 
 After making the models, we consider those metrics as important (with descending order from most important to least important):
 1. Small difference between AUC-train and AUC-test (to determine whether the model is overfitting or not),
-2. AUC-train score below 1.00,
-3. Recall of test data, and
+2. AUC-train score below 1.00, and
+3. Recall of test data.
 
 We tune all of the algorithms above except AdaBoost with various hyperparameter and find the best parameters with RandomizedSearchCV. In the end, we make a feature importance ranking. 
 
